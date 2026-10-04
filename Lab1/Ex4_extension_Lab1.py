@@ -1,0 +1,7 @@
+eggs=int(input("The number of eggs:")) 
+per_box=int(input("Number of eggs per box:"))
+boxes= eggs//per_box + (1 if eggs%per_box >0 else 0)
+print("Total eggs:", eggs)
+print("Boxes needed:",boxes) 
+print("Eggs in last box:", eggs%per_box if eggs%per_box else per_box)
+print("Eggs need to fill last box:", (per_box-eggs%per_box)if eggs%per_box else 0 )
